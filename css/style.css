@@ -37,10 +37,22 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .quadratino.giallo{
   background: #f1c40f;
+  animation: color 0.5s 1;
 }
 .quadratino.rosso{
   background: #c0392b;
+  animation: color 0.5s 1;
+}
+
+@keyframes color {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
